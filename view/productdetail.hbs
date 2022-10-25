@@ -63,7 +63,7 @@ function myFunction(imgs) {
                      <div class="full">
                         <div class="center-desk">
                            <div class="logo">
-                              <a href="../../index.html"><img src="../../images/logo.png" alt="#" /></a>
+                              <a href="../../index.html"><img src="https://www.atncorp.com/images/atn_flat_2015.svg " style="height: 50px;" alt="#" /></a>
                            </div>
                         </div>
                      </div>
@@ -77,20 +77,14 @@ function myFunction(imgs) {
                            <ul class="navbar-nav mr-auto">
                               <li class="nav-item">
                                  <a class="nav-link" href="../../User/Userhomepage">Home</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="">About</a>
-                              </li>
-                              <li class="nav-item active">
-                                 <a class="nav-link" href="../../User/products">Product</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="">Contact Us</a>
-                              </li>
+                              </li> 
 
                                 {{#if temptestlogin}}
                                     {{#each data}}
                                        {{#if Name}}
+                                    <li class="nav-item active">
+                                       <a class="nav-link" href="../../User/products">Product</a>
+                                    </li>
                                     <li class="nav-item">
                                        <a class="nav-link" href="">Hello : {{Name}}</a>
                                     </li>
@@ -220,17 +214,17 @@ function myFunction(imgs) {
                            </div>
                         </div>
                         <div class="col-md-6 margin_bottom1"> 
-                              <h1 class="col-md-12 h1"> Name : {{this.MaSP}} <h1>
-                              <h1 class="col-md-12 h2"> Detail : {{this.TenSP}} <h1>
-                              <h1 class="col-md-12 h2"> Price : {{this.MotaSP}} <h1>              
-                              <h1 class="col-md-12 h2"> Category : {{this.Price}} <h1>
-                                <h1 class="col-md-12 h2"> Producer : {{this.Category}} <h1></h1>
+                              <h1 class="col-md-12 h1"> Name : {{this.TenSP}} <h1>
+                              <h1 class="col-md-12 h2"> Detail : {{this.MoTaSP}} <h1>
+                              <h1 class="col-md-12 h2"> Price : {{this.Price}} <h1>              
+                              <h1 class="col-md-12 h2"> Category : {{this.Category}} <h1>
+                           
                               <h1 class="col-md-12 h2"> SoLuongConTrongKho : {{this.SoLuongConTrongKho}} <h1>
                         </div>
                         {{/if}}
                         {{/each}}
                         <div class="col-md-12 margin_bottom1">
-                           <a href="" class="read_more btn-danger" >Back </a>
+                           <a href="/User/Userhomepage" class="read_more btn-danger" >Back </a>
                         </div>
                      </div>
                   </div>
@@ -245,7 +239,7 @@ function myFunction(imgs) {
             <div class="container">
                <div class="row">
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                     <img class="logo1" src="images/logo1.png" alt="#"/>
+                     <img class="logo1" src="https://www.atncorp.com/images/atn_flat_2015.svg " style="height: 50px;" alt="#"/>
                      <ul class="social_icon">
                         <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>

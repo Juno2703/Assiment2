@@ -33,7 +33,6 @@
    <body class="main-layout inner_posituong">
       <!-- loader  -->
   <style>
-   
 .img12 {
   max-width:230px;
   max-height:150px;
@@ -86,13 +85,13 @@
                            <ul class="navbar-nav mr-auto">
                               <li class="nav-item">
                                  <a class="nav-link" href="../../User/Userhomepage">Home</a>
-                              </li>
+                              </li>                                   
                                 {{#if temptestlogin}}
                                     {{#each data}}
                                        {{#if Name}}
-                                    <li class="nav-item active">
-                                       <a class="nav-link" href="../../User/products">Product</a>
-                                    </li>
+                                    <li class="nav-item">
+                                       <a class="nav-link" href="../User/products">Product</a>
+                                    </li>  
                                     <li class="nav-item">
                                        <a class="nav-link" href="">Hello : {{Name}}</a>
                                     </li>
@@ -180,7 +179,7 @@
                {{#each dscate}}
                <div class="col-md-4">
                   <div class="titlepage">
-                      <a class="nav-link btn btn-info" href="../User/categorysp/{{MotaCategory}}">{{this.MotaCategory}}</a>
+                      <a class="nav-link btn btn-info" href="{{MotaCategory}}">{{this.MotaCategory}}</a>
                   </div>
                </div>
                {{/each}}
@@ -204,13 +203,8 @@
                                  <figure><img  class = "img12" src ="{{this.ImageLink}}" alt="#"/></figure>
                                  <h3>{{this.TenSP}} {{this.Mota}}</h3>
                                  <h2> Price : {{this.Price}} VND</h2>
-                                 </a>    
-                                 <form onclick="themvaogiohang()" method = "POST" action = "/User/cart">
-                                    {{!-- <li onclick="themvaogiohang()" class="btn btn-primary themvaogiohang">Thêm vào giỏ hàng</li>   --}}
-                                        <input type="hidden" name="idProduct" value="{{_id}}">
-                                        <input type="submit" value="Thêm vào giỏ hàng" name="submit" />   
-                                 </form>        
-                                            
+                                 </a>            
+                                 <li onclick="themvaogiohang()" class="btn btn-primary themvaogiohang">Thêm vào giỏ hàng</li>                
                            </div>
                         </div>
                         {{/each}}

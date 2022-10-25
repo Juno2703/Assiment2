@@ -15,7 +15,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" style="margin-left: 30px" href="">Admin System</a>
+        <a class="navbar-brand" style="margin-left: 30px" href=""><img src="https://www.atncorp.com/images/atn_flat_2015.svg " style="height: 50px;" alt="#" /></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -24,22 +24,17 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link active" style="padding-left: 50px" href="/PC">PC </a>
+                    <a class="nav-link active" style="padding-left: 50px" href="/PC">Product </a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" style="padding-left: 50px" href="/Category">Category </a>
+                    <a class="nav-link" style="padding-left: 50px; margin-right: 50px;" href="/Category">Category </a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" style="padding-left: 50px" href="">Producer </a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link " style="padding-left: 50px" href="">Users </a>
-                </li>
+                
                 {{#if temptestlogin}}
                 {{#each data}}
                 {{#if Name}}
                 <li class="nav-item">
-                    <a class="nav-link" href="">Hello : {{Name}}</a>
+                    <a class="nav-link" href="" style="margin-right: 50px;">Hello : {{Name}}</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="../Admin/logout">Logout</a>
@@ -62,21 +57,21 @@
     <div class="container" style="margin-top: 20px;">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="align-middle"> PC list </h1>
+                <h1 class="align-middle"> Product list </h1>
                 {{!-- @if (Session::has('success'))
                 <div class="alert alert-success" role="alert">
                     {{ Session::get('success') }}
                 </div>
                 @endif --}}
                 <div style="margin-right:10%; float:right;">
-                    <a href="PC/newproduct" class="btn btn-primary"> Add PC</a>
+                    <a href="PC/newproduct" class="btn btn-primary"> Add Product</a>
                     <!-- dung cai nay de goi toi trang web vd như /add-product-->
                 </div>
                 <table class="table table-hover">
                     <thead>
                         <tr>
-                            <th>TenSP</th>
                             <th>MaSP</th>
+                            <th>TenSP</th>
                             <th>Price</th>
                             <th>MotaSP</th>
                             <th>Category</th>
@@ -88,8 +83,8 @@
                     <tbody>
                         {{#each CacSanPham}}
                         <tr>
-                            <td>{{ this.TenSP }}</td>
                             <td>{{ this.MaSP }}</td>
+                            <td>{{ this.TenSP }}</td>
                             <td>{{ this.Price }}</td>
                             <td>{{ this.MoTaSP }}</td>
                             <td>{{ this.Category }}</td>
